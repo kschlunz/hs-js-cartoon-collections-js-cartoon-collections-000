@@ -5,7 +5,7 @@ let listDwarves = []
     listDwarves.push(`${i+1}. ${dwarves[i]} `)
 
  }
-   return listDwarves.join("");
+   return listDwarves.join(""); //The join() method joins all elements of an array (or an array-like object) into a string and returns this string.
 }
 
 
@@ -20,12 +20,15 @@ function summonCaptainPlanet(planeteerCalls){
 
 function longPlaneteerCalls(words) {
 
-   if(words.length>3){
+  for(let i = 0; i < words.length; i++){
+
+   if(words[i].length>4){
    return true
   }
- else{
-  return false
- }
+  else{
+     return false
+   }
+}
 
 }
 
@@ -35,6 +38,8 @@ function findTheCheese (foods) {
 
 
 //**Solved two ways, 1st way using for loop second way using array.find
+//The find() method returns the value of the first element in the array that satisfies the provided testing function. Otherwise undefined is returned.
+
 //   let found = foods.find(element=> element=='cheddar')
 //     if (found =='cheddar'){
 //       return found;
