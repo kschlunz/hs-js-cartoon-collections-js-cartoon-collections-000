@@ -18,24 +18,30 @@ function summonCaptainPlanet(planeteerCalls){
         return uppercasePlaneteerCalls
 }
 
+
+
 function longPlaneteerCalls(words) {
 
   for(let i = 0; i < words.length; i++){
 
-   if(words[i].length>4){
-   return true
+    if(words[i].length>4){
+      return true
+    }
   }
-  else{
-     return false
-   }
-}
-
+      return false
 }
 
 
 
 function findTheCheese (foods) {
 
+for (var i = 0; i < foods.length; i++) {
+
+  if (foods[i] ===  'gouda'|| foods[i]===  'cheddar' || foods[i]==='camembert') {
+    return foods[i];
+  }
+}
+return 'no cheese!'
 
 //**Solved two ways, 1st way using for loop second way using array.find
 //The find() method returns the value of the first element in the array that satisfies the provided testing function. Otherwise undefined is returned.
@@ -45,15 +51,4 @@ function findTheCheese (foods) {
 //       return found;
 //     }
 // return 'no cheese!'
-
-
-
-
-    for (var i = 0; i < foods.length; i++) {
-
-        if (foods[i] ===  'gouda'|| foods[i]===  'cheddar' || foods[i]==='camembert') {
-            return foods[i];
-        }
-    }
-    return 'no cheese!'
 }
